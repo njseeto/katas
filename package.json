@@ -1,0 +1,23 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^25.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/njseeto/katas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/njseeto/katas/issues"
+  },
+  "homepage": "https://github.com/njseeto/katas#readme"
+}
