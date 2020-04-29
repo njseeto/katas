@@ -1,25 +1,25 @@
 const romanToInt = require('./solution')
 
 test('I should return 1', () => {
-    expect(romanToInt('I')).toStrictEqual(1)
+    expect(romanToInt('I')).toEqual(1)
 })
 
-// test('V should return 5', () => {
-//     expect(romanToInt('V')).toStrictEqual(5)
-// })
+test('V should return 5', () => {
+    expect(romanToInt('V')).toStrictEqual(5)
+})
 
-// test('X should return 10', () => {
-//     expect(romanToInt('X')).toStrictEqual(10)
-// })
+test('X should return 10', () => {
+    expect(romanToInt('X')).toStrictEqual(10)
+})
 
 
-// test('L should return 50', () => {
-//     expect(romanToInt('L')).toStrictEqual(50)
-// })
+test('L should return 50', () => {
+    expect(romanToInt('L')).toStrictEqual(50)
+})
 
-// test('C should return 100', () => {
-//     expect(romanToInt('C')).toStrictEqual(100)
-// })
+test('C should return 100', () => {
+    expect(romanToInt('C')).toStrictEqual(100)
+})
 
 
 // IV is equal to 4
@@ -36,8 +36,6 @@ test('I should return 1', () => {
 
 // MCMXCIV is equal to 1994
 
-
-// should tolerate lower case letters
-// test('c should return 100', () => {
-//     expect(romanToInt('c')).toStrictEqual(100)
-// })
+test('should tolerate lower case letters', () => {
+    expect(romanToInt('c')).toStrictEqual(100)
+})
