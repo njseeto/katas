@@ -9,7 +9,7 @@ const mergeRanges = (meetings) => {
     const mergedMeetings = [sortedMeetingTimes[0]]
 
     // Loop through each meeting object in the array
-    for (let i = 1; i < sortedMeetings.length; i++ ){
+    for (let i = 1; i < sortedMeetingTimes.length; i++ ){
         const currentMeeting = sortedMeetingTimes[i]
         const lastMergedMeeting = mergedMeetings[mergedMeetings.length - 1]
 
