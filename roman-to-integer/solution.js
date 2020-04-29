@@ -1,6 +1,6 @@
 const romanToInt = (romanNumeral) => {
 
-    const conversation = {
+    const conversion = {
         "I" : 1,
         "V" : 5,
         "X" : 10,
@@ -10,14 +10,18 @@ const romanToInt = (romanNumeral) => {
         "M" : 1000
     }
 
-    let romanArray = romanNumeral.toUpperCase().split('')
-    let result = []
+    let result = 0
 
-    romanArray.forEach( letter => {
-        result += conversation[letter]
-    })
-
-    return parseInt(result)
+    for (let i = 0; i < romanNumeral.length; i++) {
+        // check if roman numeral is larger so we know whether to subtract
+        if (conversion[romanNumeral[i]] < conversion[romanNumeral[i+1]]) {
+            result-=conversion[romanNumeral[i]]
+        }
+        else {
+            result+=conversion[romanNumeral[i]]
+        }
+    }
+    return result
 }
 
 module.exports = romanToInt
