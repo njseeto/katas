@@ -15,3 +15,7 @@ it('should return false when 1231', () => {
 it('should return false when 1221', () => {
     expect(isPalindrome(1221)).toBeTruthy()
 })
+
+it('should return false when negative number', () => {
+    expect(isPalindrome(-121)).toBeFalsy()
+})
