@@ -1,0 +1,1 @@
+const rotate = require('./solution')
