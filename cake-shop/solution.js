@@ -3,6 +3,7 @@
 // Function --> input 3x arrays, output boolean
 
 const serviceChecker = ( takeOutOrders, dineInOrders, servedOrders ) => {
+    // solution using recursion
 
     // Base case is when the servedOrders array has no more orders in it
     if(servedOrders.length == 0){
